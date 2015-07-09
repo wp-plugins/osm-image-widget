@@ -1,0 +1,95 @@
+.osm-image-widget-wrapper {
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+	padding: 15px 20px;
+	border: 1px dashed #3e3c38;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.osm-image-widget-wrapper img {
+	clear: both;
+	max-width: 100%;
+	text-align: center;
+	margin: 0 auto;
+}
+.osm-image-widget-upload {
+	position: relative;
+	clear: both;
+	margin: 10px 0 !important;
+}
+.osm-image-widget-delete {
+	position: absolute;
+	top: 8px;
+	right: 12px;
+	color: #444;
+	cursor: pointer;
+}
+
+.osm-image-widget-link-wrapper {
+    position: relative;
+    display: block;
+    width: 100%;
+    vertical-align: top;
+    border-spacing: 0;
+}
+.osm-image-widget-link-wrapper .widefat {
+    width: 100%;
+    padding-right: 35px;
+    margin: 0;
+	-webkit-border-radius: 3px 0px 0px 3px;
+	-moz-border-radius: 3px 0px 0px 3px;
+	border-radius: 3px 0px 0px 3px;
+}
+.osm-image-widget-link-button {
+	position: absolute;
+	display: block;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: auto;
+	width: 30px;
+	height: auto;
+	color: #727272;
+	text-align: center;
+	text-decoration: none;
+    padding: 0;
+    margin: 0;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+	-webkit-border-radius: 0px 3px 3px 0px;
+	-moz-border-radius: 0px 3px 3px 0px;
+	border-radius: 0px 3px 3px 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-box-shadow: inset 0px 1px 0px #ffffff;
+	-moz-box-shadow: inset 0px 1px 0px #ffffff;
+	box-shadow: inset 0px 1px 0px #ffffff;
+	background: #f7f7f7 none repeat scroll 0 0;
+    cursor: pointer;
+}
+
+.post-link-table {
+	position: relative;
+	clear: both;
+	width: 100%;
+	border: 1px solid #e5e5e5;
+	border-spacing: 0;
+    border-collapse: collapse;
+}
+.post-link-table tr {
+	height: 34px;
+}
+.post-link-table tbody tr:nth-child(odd) {
+	background-color: #f1f1f1;
+}
+.post-link-table tbody tr:nth-child(even) {
+	background-color: #ffffff;
+}
+.post-link-table td {
+	color: #0073aa;
+	padding: 0 10px;
+	cursor: pointer;
+}
