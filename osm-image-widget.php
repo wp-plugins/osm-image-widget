@@ -4,7 +4,7 @@
 Plugin Name: OSM Image Widget
 Plugin URI:  http://www.programador-paginasweb.com
 Description: This plugin lets you easily add images to widgets. Uses WordPress media library. You can add link, title, text, alternative text, CSS classes...
-Version:     1.0
+Version:     1.1
 Author:      Pablo López
 Author URI:  http://www.programador-paginasweb.com
 License:     GPLv2 or later
@@ -37,6 +37,7 @@ class OSM_Image_Widget extends WP_Widget {
         $link = esc_attr($instance['link']);
         $link_text = esc_attr($instance['link_text']);
         $link_class = esc_attr($instance['link_class']);
+        $link_rel = esc_attr($instance['link_rel']);
         $link_target = esc_attr($instance['link_target']);
 
         echo $args['before_widget'];
@@ -46,7 +47,7 @@ class OSM_Image_Widget extends WP_Widget {
         echo '<div id="osm-image-widget-wrapper">';
             echo '<div class="osm-image-widget-image">';
                 if (!empty($link)) {
-                    echo '<a href="' . $link . '" title="' . $link_text . '"';
+                    echo '<a href="' . $link . '" title="' . $link_text . '" rel="' . $link_rel . '"';
                     if ($link_target == 1) {
                         echo ' target="_blank"';
                     }
@@ -72,7 +73,7 @@ class OSM_Image_Widget extends WP_Widget {
 
             if (!empty($link)) {
                 echo '<div class="osm-image-widget-link">';
-                    echo '<a href="' . $link . '" title="' . $link_text . '"';
+                    echo '<a href="' . $link . '" title="' . $link_text . '" rel="' . $link_rel . '"';
                     if (!empty($link_class)) {
                         echo ' class="' . $link_class . '"';
                     }
@@ -104,6 +105,7 @@ class OSM_Image_Widget extends WP_Widget {
         $link = strip_tags($instance['link']);
         $link_text = strip_tags($instance['link_text']);
         $link_class = strip_tags($instance['link_class']);
+        $link_rel = strip_tags($instance['link_rel']);
         $link_target = strip_tags($instance['link_target']);?>
 
         <p>
@@ -169,6 +171,25 @@ class OSM_Image_Widget extends WP_Widget {
         </p>
 
         <p>
+            <label for="<?php echo $this->get_field_id('link_rel');?>"><?php _e('Rel Attribute','osm-image-widget');?>:</label>
+            <select id="<?php echo $this->get_field_id('link_rel');?>" name="<?php echo $this->get_field_name('link_rel');?>" class="widefat">
+                <option value="" <?php if ($link_rel == "") {?>selected<?php }?>><?php _e('Select an option','osm-image-widget');?></option>
+                <option value="alternate" <?php if ($link_rel == "alternate") {?>selected<?php }?>>alternate</option>
+                <option value="author" <?php if ($link_rel == "author") {?>selected<?php }?>>author</option>
+                <option value="bookmark" <?php if ($link_rel == "bookmark") {?>selected<?php }?>>bookmark</option>
+                <option value="help" <?php if ($link_rel == "help") {?>selected<?php }?>>help</option>
+                <option value="license" <?php if ($link_rel == "license") {?>selected<?php }?>>license</option>
+                <option value="next" <?php if ($link_rel == "next") {?>selected<?php }?>>next</option>
+                <option value="nofollow" <?php if ($link_rel == "nofollow") {?>selected<?php }?>>nofollow</option>
+                <option value="noreferrer" <?php if ($link_rel == "noreferrer") {?>selected<?php }?>>noreferrer</option>
+                <option value="prefetch" <?php if ($link_rel == "prefetch") {?>selected<?php }?>>prefetch</option>
+                <option value="prev" <?php if ($link_rel == "prev") {?>selected<?php }?>>prev</option>
+                <option value="search" <?php if ($link_rel == "search") {?>selected<?php }?>>search</option>
+                <option value="tag" <?php if ($link_rel == "tag") {?>selected<?php }?>>tag</option>
+            </select>
+        </p>
+
+        <p>
             <input type="checkbox" id="<?php echo $this->get_field_id('link_target');?>" name="<?php echo $this->get_field_name('link_target');?>" value="1" class="checkbox" <?php if (esc_attr($link_target) == 1) {?>checked<?php }?> />
             <label for="<?php echo $this->get_field_id('link_target');?>"><?php _e('Open in a new window?','osm-image-widget');?></label>
         </p>
@@ -191,6 +212,7 @@ class OSM_Image_Widget extends WP_Widget {
         $instance['link'] = strip_tags($new_instance['link']);
         $instance['link_text'] = strip_tags($new_instance['link_text']);
         $instance['link_class'] = strip_tags($new_instance['link_class']);
+        $instance['link_rel'] = strip_tags($new_instance['link_rel']);
         $instance['link_target'] = strip_tags($new_instance['link_target']);
 
         return $instance;

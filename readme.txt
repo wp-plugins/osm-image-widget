@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=6JYWV
 Tags: widget, image, media
 Requires at least: 3.6
 Tested up to: 4.2.2
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,6 +23,10 @@ You can add CSS classes to customize the image and link button.
 
 Extract the zip file and just drop the contents in the <code>wp-content/plugins/</code> directory of your WordPress installation (or install it directly from your dashboard) and then activate it from Plugins page.
 
+== Screenshots ==
+
+1. Widget fields
+
 == Frequently Asked Questions ==
 
 = Does it use the WordPress multimedia library? =
@@ -33,3 +37,8 @@ Yes. The widget uses WordPress multimedia library to manage the images of the wi
 
 = 1.0 =
 *First public release
+
+= 1.1 =
+- Rel Attribute added
+- Screenshot added
+- Some improves in CSS

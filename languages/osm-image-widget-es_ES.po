@@ -3,8 +3,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: wp-image-widget\n"
-"POT-Creation-Date: 2015-07-01 13:41+0100\n"
-"PO-Revision-Date: 2015-07-01 13:41+0100\n"
+"POT-Creation-Date: 2015-07-09 17:59+0100\n"
+"PO-Revision-Date: 2015-07-09 17:59+0100\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: es_ES\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Poedit 1.7.4\n"
+"X-Generator: Poedit 1.7.1\n"
 "X-Poedit-KeywordsList: _;gettext;gettext_noop;_e;__\n"
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -26,39 +26,39 @@ msgstr "Añade imágenes a tus widgets"
 msgid "OSM Image Widget"
 msgstr "OSM Image Widget"
 
-#: ../osm-image-widget.php:110 ../osm-image-widget.php:220
+#: ../osm-image-widget.php:111 ../osm-image-widget.php:241
 msgid "Title"
 msgstr "Título"
 
-#: ../osm-image-widget.php:114
+#: ../osm-image-widget.php:115
 msgid "Image"
 msgstr "Imagen"
 
-#: ../osm-image-widget.php:122
+#: ../osm-image-widget.php:123
 msgid "Upload Image"
 msgstr "Subir imagen"
 
-#: ../osm-image-widget.php:127
+#: ../osm-image-widget.php:128
 msgid "Alternative Text for Image"
 msgstr "Texto alternativo para la imagen"
 
-#: ../osm-image-widget.php:132
+#: ../osm-image-widget.php:133
 msgid "CSS Class for Image"
 msgstr "Clases CSS para la imagen"
 
-#: ../osm-image-widget.php:137
+#: ../osm-image-widget.php:138
 msgid "Text"
 msgstr "Texto"
 
-#: ../osm-image-widget.php:142
+#: ../osm-image-widget.php:143
 msgid "Link"
 msgstr "Enlace"
 
-#: ../osm-image-widget.php:146
+#: ../osm-image-widget.php:147
 msgid "Post, Page & Custom Post Types List"
 msgstr "Listado de Entradas, Páginas y Post Types personalizados"
 
-#: ../osm-image-widget.php:150
+#: ../osm-image-widget.php:151
 msgid ""
 "Then the last 50 entries are displayed sorted by date. Use the filter to "
 "make a more specific search"
@@ -66,23 +66,31 @@ msgstr ""
 "A continuación se muestran las últimas 50 entradas ordenadas por fecha. "
 "Utiliza el buscador para realizar una búsqueda más concreta"
 
-#: ../osm-image-widget.php:153 ../osm-image-widget.php:154
+#: ../osm-image-widget.php:154 ../osm-image-widget.php:155
 msgid "Search"
 msgstr "Buscar"
 
-#: ../osm-image-widget.php:162
+#: ../osm-image-widget.php:163
 msgid "Link Text"
 msgstr "Texto del enlace"
 
-#: ../osm-image-widget.php:167
+#: ../osm-image-widget.php:168
 msgid "Link Class"
 msgstr "Clase del enlace"
 
 #: ../osm-image-widget.php:173
+msgid "Rel Attribute"
+msgstr "Atributo Rel"
+
+#: ../osm-image-widget.php:175
+msgid "Select an option"
+msgstr "Selecciona una opción"
+
+#: ../osm-image-widget.php:193
 msgid "Open in a new window?"
 msgstr "¿Abrir en nueva ventana?"
 
-#: ../osm-image-widget.php:221
+#: ../osm-image-widget.php:242
 msgid "Date"
 msgstr "Fecha"
 
